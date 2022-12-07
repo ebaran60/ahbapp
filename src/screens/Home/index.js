@@ -5,7 +5,7 @@ export class index extends Component {
   render() {
     return (
       <View>
-        <Text>Home</Text>
+        <Text>Home hello</Text>
       </View>
     )
   }

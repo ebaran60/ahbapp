@@ -1,22 +1,27 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-    container:{flexDirection:'row',},
+    container:{
+        flexDirection:'row',
+        margin:5,
+        backgroundColor:'blue'
+    },
     image:{
         width:40,
         height:40,
+        marginRight:5,
         
     },
+    body_container:{
+        flex: 1,
+    },
     merhaba:{
-        fontFamily: 'Urbanist',
-        fontStyle: 'normal',
+        fontStyle: 'Urbanist',
         fontSize:14,
-        fontWeight:'bold',
+        tintColor:'#B9B9B9',
     },
     name:{},
-    touchableview:{
-        height:4, 
-        width:16,
-        backgroundColor:'black'
+    touchable_container:{
+        textAlign: 'left',
     },
 });

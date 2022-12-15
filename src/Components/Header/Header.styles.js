@@ -16,7 +16,6 @@ export default StyleSheet.create({
         flex: 1,
     },
     merhaba:{
-        fontStyle: 'Urbanist',
         fontSize:14,
         tintColor:'#B9B9B9',
     },

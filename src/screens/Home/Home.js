@@ -13,34 +13,39 @@ const Home = () => {
   const Data = [
     {
       id: 1,
-      source: "../../assets/images/profile.png",
+      source: require("../../assets/images/profile.png"),
     },
     {
       id: 2,
-      source: "../../assets/images/profile.png",
+      source: require("../../assets/images/profile.png"),
     },
     {
       id: 3,
-      source: "../../assets/images/profile.png",
+      source: require("../../assets/images/profile.png"),
     },
   ]
 
-  const renderEvents = ({Data}) => (
-    <Events src={Data => Data.}/>
-  );
+
 
   return (
     <SafeAreaView style={styles.container}>
-        <View>
-            <Header userName="isim" />
-            <Search placeholder="Search" iconName="search" />
-            <MainEvent />
-            <Titles />
-            
-        </View>
-        <FlatList data = {Data} renderItem={renderEvents} />
+      <View>
+        <Header userName="isim" />
+        <Search placeholder="Search" iconName="search" />
+        <MainEvent />
+        <Titles />
+        <FlatList 
+        horizontal
+        pagingEnabled
+        showsHorizontalScrollIndicator={false}
+        data={Data} 
+        renderItem={({ item }) =>
+          <Events item={item} />
+        } />
+      </View>
+
     </SafeAreaView>
-    
+
   );
 }
 

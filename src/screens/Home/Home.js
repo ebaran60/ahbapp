@@ -8,6 +8,7 @@ import MainEvent from '../../Components/mainEvent';
 import Titles from '../../Components/Titles';
 import Events from '../../Components/Events';
 import { width } from '../../config';
+
 const Home = () => {
   const [selectedSlider, setSelectedSlider] = useState(0);
   const scrolling = (scrollLocation) => {
@@ -32,6 +33,7 @@ const Home = () => {
       source: require("../../assets/images/profile.png"),
     },
   ]
+  
 
 
 
@@ -40,8 +42,6 @@ const Home = () => {
       <View>
         <Header userName="isim" />
         <Search placeholder="Search" iconName="search" />
-        <MainEvent />
-        <Titles />
         <FlatList
           onScroll={event => scrolling(event.nativeEvent.contentOffset.x)}
           horizontal
@@ -49,13 +49,26 @@ const Home = () => {
           showsHorizontalScrollIndicator={false}
           data={Data}
           renderItem={({ item, index }) =>
-            <Events item={item} />
+            <MainEvent item={item} />
           } />
         <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'center', marginTop: 5 }}>
           {Data.map((item, index) =>
             <View key={index} style={{ width: selectedSlider == index?16:8, height: 8, borderRadius: 8, marginHorizontal: 2, backgroundColor: selectedSlider == index ? 'red' : 'black' }} />
           )}
         </View>
+      </View>
+      <View>
+        <Titles />
+        <FlatList
+          onScroll={event => scrolling(event.nativeEvent.contentOffset.x)}
+          horizontal
+          pagingEnabled
+          showsHorizontalScrollIndicator={false}
+          data={Data}
+          renderItem={({item}) =>
+            <Events item={item} />
+          } />
+
       </View>
 
     </SafeAreaView>

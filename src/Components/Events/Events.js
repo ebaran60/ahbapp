@@ -4,8 +4,7 @@ import styles from './Event.styles';
 const Events = (props) => {
   return (
     <TouchableOpacity style={styles.container}>
-        <Text>ASD</Text>
-        <Image source={props.item.source} />
+        <Image style={styles.image} source={props.item.source} />
     </TouchableOpacity>
   )
 }

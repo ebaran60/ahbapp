@@ -1,20 +1,27 @@
-import { View, Image, SafeAreaView } from 'react-native'
+import { Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 import styles from './mainEvent.styles'
 
-const mainEvent = () => {
+const mainEvent = (props) => {
+  const Data = [
+    {
+      id: 1,
+      source: require("../../assets/images/profile.png"),
+    },
+    {
+      id: 2,
+      source: require("../../assets/images/profile.png"),
+    },
+    {
+      id: 3,
+      source: require("../../assets/images/profile.png"),
+    },
+  ]
   return (
-    <SafeAreaView style={styles.container}>
-      <View >
-          <Image style={styles.image} source={require('../../assets/images/profile.png')}/>
-      </View>
-      <View style={styles.views}>
-        <View style={{height:5, width:14,backgroundColor:'black',borderRadius:50, margin:5}}/>
-        <View style={{height:5, width:29,backgroundColor:'black',borderRadius:50, margin:5}}/>
-        <View style={{height:5, width:14,backgroundColor:'black',borderRadius:50, margin:5}}/>
-      </View>
-    </SafeAreaView>
+    <TouchableOpacity style={styles.container}>
+          <Image style={styles.image} source={props.item.source}/>
+    </TouchableOpacity>
   )
 }
 

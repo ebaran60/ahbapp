@@ -32,6 +32,32 @@ const Home = () => {
       id: 3,
       source: require("../../assets/images/profile.png"),
     },
+  ];
+  const Titless = [
+    {
+      id:1,
+      title:"Music",
+    },
+    {
+      id:2,
+      title:"Dance"
+    },
+    {
+      id: 3,
+      title:"Football"
+    },
+    {
+      id:4,
+      title:"Cinema"
+    },
+    {
+      id:5,
+      title:"Camping"
+    },
+    {
+      id:6,
+      title:"Dating"
+    },
   ]
   
 
@@ -56,11 +82,16 @@ const Home = () => {
             <View key={index} style={{ width: selectedSlider == index?16:8, height: 8, borderRadius: 8, marginHorizontal: 2, backgroundColor: selectedSlider == index ? 'red' : 'black' }} />
           )}
         </View>
-      </View>
-      <View>
-        <Titles />
         <FlatList
-          onScroll={event => scrolling(event.nativeEvent.contentOffset.x)}
+          horizontal
+          pagingEnabled
+          showsHorizontalScrollIndicator={false}
+          data={Titless}
+          renderItem={({item}) =>
+            <Titles item={item} />
+        }
+        />
+        <FlatList
           horizontal
           pagingEnabled
           showsHorizontalScrollIndicator={false}

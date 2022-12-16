@@ -3,11 +3,10 @@ import React from 'react';
 
 import styles from './Titles.styles';
 
-const Titles = () => {
+const Titles = (props) => {
   return (
     <View style={styles.container}>
-      <Button title='aaa' />
-      <Button title='aaa' />
+      <Button style={styles.button} title={props.item.title} />
     </View>
   );
 }

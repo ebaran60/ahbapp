@@ -1,6 +1,7 @@
-import { View, SafeAreaView, FlatList } from 'react-native'
+import { View, SafeAreaView, FlatList, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 
+import Proffer from '../../Components/Proffer';
 import styles from './Home.styles';
 import Header from '../../Components/Header';
 import Search from '../../Components/Searchbar';
@@ -9,7 +10,7 @@ import Titles from '../../Components/Titles';
 import Events from '../../Components/Events';
 import { width } from '../../config';
 
-const Home = () => {
+const Home = ({navigation}) => {
   const [selectedSlider, setSelectedSlider] = useState(0);
   const scrolling = (scrollLocation) => {
     if (scrollLocation == 0) {
@@ -59,13 +60,16 @@ const Home = () => {
       title:"Dating"
     },
   ]
+  const handleProductSelect = (source) => {
+    navigation.navigate('DetailScreen', {source})
+ };
   
 
 
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View>
+    <SafeAreaView style={styles.container} >
+      <ScrollView>
         <Header userName="isim" />
         <Search placeholder="Search" iconName="search" />
         <FlatList
@@ -75,20 +79,21 @@ const Home = () => {
           showsHorizontalScrollIndicator={false}
           data={Data}
           renderItem={({ item, index }) =>
-            <MainEvent item={item} />
+            <MainEvent item={item} onSelect={() => handleProductSelect(item.source)} />
           } />
         <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'center', marginTop: 5 }}>
           {Data.map((item, index) =>
             <View key={index} style={{ width: selectedSlider == index?16:8, height: 8, borderRadius: 8, marginHorizontal: 2, backgroundColor: selectedSlider == index ? 'red' : 'black' }} />
           )}
         </View>
+        <Proffer title="Trending"/>
         <FlatList
           horizontal
           pagingEnabled
           showsHorizontalScrollIndicator={false}
           data={Titless}
           renderItem={({item}) =>
-            <Titles item={item} />
+            <Titles title={item.title} />
         }
         />
         <FlatList
@@ -99,11 +104,17 @@ const Home = () => {
           renderItem={({item}) =>
             <Events item={item} />
           } />
-
-      </View>
-
+        <Proffer title="Nearby Your Location"/>
+        <FlatList
+          horizontal
+          pagingEnabled
+          showsHorizontalScrollIndicator={false}
+          data={Data}
+          renderItem={({item}) =>
+            <Events item={item} />
+          } />
+      </ScrollView>
     </SafeAreaView>
-
   );
 }
 

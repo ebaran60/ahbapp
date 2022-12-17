@@ -3,7 +3,7 @@ import { Image, View,Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeStackScreen, ActivityStackScreen, HistoryStackScreen, ProfileStackScreen, SearchStackScreen } from './screens';
+import { HomeStackScreen, ActivityStackScreen, HistoryStackScreen, ProfileStackScreen, SearchStackScreen, DetailStackScreen } from './screens';
 import {colors} from './config'
 const Tab = createBottomTabNavigator();
 
@@ -61,6 +61,9 @@ export default function App() {
         <Stack.Screen
           name="TabScreens"
           component={TabScreens} />
+          <Stack.Screen
+          name="DetailScreen"
+          component={DetailStackScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

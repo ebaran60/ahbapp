@@ -6,6 +6,7 @@ import Activity from './Activity';
 import History from './History';
 import Profile from './Profile';
 import Search from './Search';
+import Detail from './Detail';
 
 
 
@@ -73,7 +74,17 @@ function SearchStackScreen({ navigation }) {
   );
 }
 
+export const DetailStack = createNativeStackNavigator();
+
+function DetailStackScreen({ navigation }) {
+  return (
+    <HistoryStack.Navigator screenOptions={{
+      headerShown: false
+    }}>
+      <HistoryStack.Screen name="Detail" component={Detail} />
+    </HistoryStack.Navigator>
+  );
+}
 
 
-
-export {HomeStackScreen, ActivityStackScreen, HistoryStackScreen, ProfileStackScreen,SearchStackScreen};
+export {HomeStackScreen, ActivityStackScreen, HistoryStackScreen, ProfileStackScreen,SearchStackScreen,DetailStackScreen};

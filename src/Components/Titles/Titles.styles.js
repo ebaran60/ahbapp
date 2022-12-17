@@ -2,15 +2,18 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
     container:{
-        justifyContent:'center',
-        alignItems:'center',
-        marginHorizontal:5,
+        width:80,
+        height:34,
+        padding:5,
+        margin:5,
+        backgroundColor: '#313131',
+        borderRadius: 50,
+        alignItems:'center'
+
     },
-    button:{
-        width: 800,
-        height: 34,
-        paddingVertical: 12,
-        paddingHorizontal: 32,
-        borderRadius: 4,
+    text:{
+        fontSize:14,
+        lineHeight:21,
+        color:'#FFFFFF',
     },
 });

@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Image, View,Text } from 'react-native';
+import { Image, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeStackScreen, ActivityStackScreen, HistoryStackScreen, ProfileStackScreen ,MapStackScreen } from './screens';
-import {colors} from './config'
+import { HomeStackScreen, ActivityStackScreen, HistoryStackScreen, ProfileStackScreen, MapStackScreen } from './screens';
+import { colors } from './config'
 const Tab = createBottomTabNavigator();
 
 const TabScreens = ({ navigation }) => {
@@ -21,40 +21,52 @@ const TabScreens = ({ navigation }) => {
       <Tab.Screen name="Anasayfa" component={HomeStackScreen} options={{
         tabBarShowLabel: false,
         tabBarIcon: ({ focused }) => {
-          const image = focused
-            ? require('./assets/images/homeFocus.png')
-            : require('./assets/images/home.png'); return <Image style={{ width: 45, height: 45 }} source={image} />
+          return (
+            focused
+              ? <Image style={{ width: 45, resizeMode: 'contain', height: 45 }} source={require('./assets/images/homeFocus.png')} />
+              : <Image style={{ width: 30, resizeMode: 'contain', height: 30 }} source={require('./assets/images/home.png')} />
+          )
         }
       }} />
       <Tab.Screen name="Aktiviteler" component={ActivityStackScreen} options={{
         tabBarShowLabel: false,
         tabBarIcon: ({ focused }) => {
-          const image = focused
-            ? require('./assets/images/activityFocus.png')
-            : require('./assets/images/activity.png'); return <Image style={{ width: 50, height: 50 }} source={image} />
+          return (
+            focused
+              ? <Image style={{ width: 45, resizeMode: 'contain', height: 45 }} source={require('./assets/images/activityFocus.png')} />
+              : <Image style={{ width: 30, resizeMode: 'contain', height: 30 }} source={require('./assets/images/activity.png')} />
+          )
         }
       }} />
-            <Tab.Screen name="Map" component={MapStackScreen} options={{
+      <Tab.Screen name="Map" component={MapStackScreen} options={{
         tabBarShowLabel: false,
         tabBarIcon: ({ focused }) => {
-          const image = focused
-            ? require('./assets/images/mapFocus.png')
-            : require('./assets/images/map.png'); return <Image style={{ width: 50, height: 50 }} source={image} />
+          return (
+            focused
+              ? <Image style={{ width: 45, resizeMode: 'contain', height: 45 }} source={require('./assets/images/mapFocus.png')} />
+              : <Image style={{ width: 30, resizeMode: 'contain', height: 30 }} source={require('./assets/images/map.png')} />
+          )
         }
       }} />
       <Tab.Screen name="Geçmiş" component={HistoryStackScreen} options={{
         tabBarShowLabel: false,
         tabBarIcon: ({ focused }) => {
-          const image = focused
-            ? require('./assets/images/historyFocus.png')
-            : require('./assets/images/history.png'); return <Image style={{ width: 50, height: 50 }} source={image} />
+          return (
+            focused
+              ? <Image style={{ width: 45, resizeMode: 'contain', height: 45 }} source={require('./assets/images/historyFocus.png')} />
+              : <Image style={{ width: 30, resizeMode: 'contain', height: 30 }} source={require('./assets/images/history.png')} />
+          )
         }
       }} />
       <Tab.Screen name="Profil" component={ProfileStackScreen} options={{
         tabBarShowLabel: false,
-        tabBarIcon: ({ focused }) => focused
-          ? <Image style={{ width: 50, height: 50 }} source={require('./assets/images/profileFocus.png')} />
-          : <Image style={{ width: 50, height: 50 }} source={require('./assets/images/profile.png')} />
+        tabBarIcon: ({ focused }) => {
+          return (
+            focused
+              ? <Image style={{ width: 45, resizeMode: 'contain', height: 45 }} source={require('./assets/images/profileFocus.png')} />
+              : <Image style={{ width: 30, resizeMode: 'contain', height: 30 }} source={require('./assets/images/profile.png')} />
+          )
+        }
       }} />
     </Tab.Navigator>
   );

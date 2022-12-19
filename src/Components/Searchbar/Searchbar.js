@@ -1,6 +1,5 @@
-import { View, TextInput } from 'react-native'
+import { View, TextInput,Image } from 'react-native'
 import React from 'react'
-import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import styles from './Searchbar.styles';
 
@@ -12,7 +11,7 @@ const Searchbar = ({placeholder,iconName}) => {
         placeholder={placeholder}
 
       />
-      <Icon name={iconName} size={35} color="gray" />
+      <Image style={{width:30,height:30,resizeMode:'contain'}} source={require('../../assets/images/search-icon.png')} />
     </View>
   );
 }

@@ -10,8 +10,19 @@ export default StyleSheet.create({
     image:{
         width: 150,
         height: 235,
-        borderRadius:15,
-        resizeMode: 'contain',
-        backgroundColor: 'blue',
+        alignItems:'flex-start',
+        justifyContent:'flex-end',
+        padding:5
     },
+    textContainer:{
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        
+        elevation: 24,
+    }
 });

@@ -23,15 +23,29 @@ const Home = ({navigation}) => {
   const Data = [
     {
       id: 1,
-      source: require("../../assets/images/profile.png"),
+      source: require("../../assets/images/Tarkan.png"),
     },
     {
       id: 2,
-      source: require("../../assets/images/profile.png"),
+      source: require("../../assets/images/Tarkan.png"),
     },
     {
       id: 3,
-      source: require("../../assets/images/profile.png"),
+      source: require("../../assets/images/Tarkan.png"),
+    },
+  ];
+  const Activity = [
+    {
+      id: 1,
+      source: require("../../assets/images/cinema.png"),
+    },
+    {
+      id: 2,
+      source: require("../../assets/images/cinema.png"),
+    },
+    {
+      id: 3,
+      source: require("../../assets/images/cinema.png"),
     },
   ];
   const Titless = [
@@ -61,7 +75,7 @@ const Home = ({navigation}) => {
     },
   ]
   const handleProductSelect = (source) => {
-    navigation.navigate('DetailScreen', {source})
+    navigation.navigate('Detail', {source})
  };
   
 
@@ -100,7 +114,7 @@ const Home = ({navigation}) => {
           horizontal
           pagingEnabled
           showsHorizontalScrollIndicator={false}
-          data={Data}
+          data={Activity}
           renderItem={({item}) =>
             <Events item={item} />
           } />
@@ -109,7 +123,7 @@ const Home = ({navigation}) => {
           horizontal
           pagingEnabled
           showsHorizontalScrollIndicator={false}
-          data={Data}
+          data={Activity}
           renderItem={({item}) =>
             <Events item={item} />
           } />

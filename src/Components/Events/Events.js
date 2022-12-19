@@ -1,10 +1,17 @@
-import {  Image, View, Text, TouchableOpacity } from 'react-native'
+import {  Image, ImageBackground, TouchableOpacity,Text, View } from 'react-native'
 import React from 'react'
 import styles from './Event.styles';
 const Events = (props) => {
   return (
     <TouchableOpacity style={styles.container}>
-        <Image style={styles.image} source={props.item.source} />
+        <ImageBackground style={styles.image} source={props.item.source} borderRadius={10} resizeMode={'cover'}>
+          <View style={styles.textContainer}>
+
+            <Text style={{color:'white'}}>aaaaa</Text>
+            <Text style={{color:'white'}}>aaaaa</Text>
+            <Text style={{color:'white'}}>aaaaa</Text>
+          </View>
+        </ImageBackground>
     </TouchableOpacity>
   )
 }

@@ -19,6 +19,7 @@ function HomeStackScreen({ navigation }) {
       headerShown: false
     }}>
       <HomeStack.Screen name="Home" component={Home} />
+      <HomeStack.Screen name="Detail" component={Detail} />
     </HomeStack.Navigator>
   );
 }
@@ -74,17 +75,5 @@ function SearchStackScreen({ navigation }) {
   );
 }
 
-export const DetailStack = createNativeStackNavigator();
 
-function DetailStackScreen({ navigation }) {
-  return (
-    <HistoryStack.Navigator screenOptions={{
-      headerShown: false
-    }}>
-      <HistoryStack.Screen name="Detail" component={Detail} />
-    </HistoryStack.Navigator>
-  );
-}
-
-
-export {HomeStackScreen, ActivityStackScreen, HistoryStackScreen, ProfileStackScreen,SearchStackScreen,DetailStackScreen};
+export {HomeStackScreen, ActivityStackScreen, HistoryStackScreen, ProfileStackScreen,SearchStackScreen};

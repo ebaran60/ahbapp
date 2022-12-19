@@ -61,9 +61,6 @@ export default function App() {
         <Stack.Screen
           name="TabScreens"
           component={TabScreens} />
-          <Stack.Screen
-          name="DetailScreen"
-          component={DetailStackScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

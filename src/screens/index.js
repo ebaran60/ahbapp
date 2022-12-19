@@ -12,7 +12,7 @@ import Detail from './Detail';
 
 export const HomeStack = createNativeStackNavigator();
 
-function HomeStackScreen({ navigation }) {
+export function HomeStackScreen({ navigation }) {
   
   return (
     <HomeStack.Navigator screenOptions={{
@@ -26,7 +26,7 @@ function HomeStackScreen({ navigation }) {
 
 export const ActivityStack = createNativeStackNavigator();
 
-function ActivityStackScreen({ navigation }) {
+export function ActivityStackScreen({ navigation }) {
   return (
     <ActivityStack.Navigator screenOptions={{
       headerShown: false
@@ -40,7 +40,7 @@ function ActivityStackScreen({ navigation }) {
 
 export const HistoryStack = createNativeStackNavigator();
 
-function HistoryStackScreen({ navigation }) {
+export function HistoryStackScreen({ navigation }) {
   return (
     <HistoryStack.Navigator screenOptions={{
       headerShown: false
@@ -53,7 +53,7 @@ function HistoryStackScreen({ navigation }) {
 
 export const ProfileStack = createNativeStackNavigator();
 
-function ProfileStackScreen({ navigation }) {
+export function ProfileStackScreen({ navigation }) {
   return (
     <ProfileStack.Navigator screenOptions={{
       headerShown: false
@@ -65,7 +65,7 @@ function ProfileStackScreen({ navigation }) {
 
 export const SearchStack = createNativeStackNavigator();
 
-function SearchStackScreen({ navigation }) {
+export function SearchStackScreen({ navigation }) {
   return (
     <SearchStack.Navigator screenOptions={{
       headerShown: false
@@ -74,6 +74,14 @@ function SearchStackScreen({ navigation }) {
     </SearchStack.Navigator>
   );
 }
+export const MapStack = createNativeStackNavigator();
 
-
-export {HomeStackScreen, ActivityStackScreen, HistoryStackScreen, ProfileStackScreen,SearchStackScreen};
+export function MapStackScreen({ navigation }) {
+  return (
+    <SearchStack.Navigator screenOptions={{
+      headerShown: false
+    }}>
+      <SearchStack.Screen name="Search" component={Search} />
+    </SearchStack.Navigator>
+  );
+}

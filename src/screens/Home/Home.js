@@ -8,7 +8,7 @@ import Search from '../../Components/Searchbar';
 import MainEvent from '../../Components/mainEvent';
 import Titles from '../../Components/Titles';
 import Events from '../../Components/Events';
-import { width } from '../../config';
+import { colors, width } from '../../config';
 
 const Home = ({navigation}) => {
   const [selectedSlider, setSelectedSlider] = useState(0);
@@ -97,7 +97,7 @@ const Home = ({navigation}) => {
           } />
         <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'center', marginTop: 5 }}>
           {Data.map((item, index) =>
-            <View key={index} style={{ width: selectedSlider == index?16:8, height: 8, borderRadius: 8, marginHorizontal: 2, backgroundColor: selectedSlider == index ? 'red' : 'black' }} />
+            <View key={index} style={{ width: selectedSlider == index?29:14, height: 5, borderRadius: 8, marginHorizontal: 2, backgroundColor: selectedSlider == index ? colors.gray : '#D9D9D9' }} />
           )}
         </View>
         <Proffer title="Trending"/>

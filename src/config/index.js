@@ -16,6 +16,12 @@ export const colors = {
   gray:'#606060'
 
 };
+export const Fonts = {
+  Regular: 'Urbanist-Regular',
+  Semibold: 'Urbanist-SemiBold',
+  Bold: 'Urbanist-Bold',
+  Medium: 'Urbanist-Medium',
+}
 
 export let headerConfig, headerConfigWithFile, imageToken;
 export const setToken = async () => {

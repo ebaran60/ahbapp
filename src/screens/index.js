@@ -20,6 +20,7 @@ export function HomeStackScreen({ navigation }) {
     }}>
       <HomeStack.Screen name="Home" component={Home} />
       <HomeStack.Screen name="Detail" component={Detail} />
+      <HomeStack.Screen name="Detail" component={Detail} />
     </HomeStack.Navigator>
   );
 }

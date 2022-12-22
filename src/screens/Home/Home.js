@@ -8,6 +8,7 @@ import Search from '../../Components/Searchbar';
 import MainEvent from '../../Components/mainEvent';
 import Titles from '../../Components/Titles';
 import Events from '../../Components/Events';
+import NoResult from '../../Components/NoResult';
 import { colors, width } from '../../config';
 
 const Home = ({ navigation }) => {
@@ -43,7 +44,8 @@ const Home = ({ navigation }) => {
         <Header userName="Alexandre S." />
         <Search value={searchKeyword} onChangeText={text => aramaYap(text)} />
         {dataState.length == 0
-          ? <Text>Noresult</Text>
+          ? 
+          <NoResult />
           : <View>
             <FlatList
               onScroll={event => scrolling(event.nativeEvent.contentOffset.x)}

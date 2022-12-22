@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { width } from '../../config'
+import { colors, width } from '../../config'
 
 export default StyleSheet.create({
     container:{
@@ -22,6 +22,7 @@ export default StyleSheet.create({
     },
     input:{
         width:width*0.76,
+        color:colors.white
     },
     right_container:{
         marginRight:10,

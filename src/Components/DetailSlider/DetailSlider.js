@@ -1,4 +1,4 @@
-import { FlatList, ImageBackground, TouchableOpacity, View } from 'react-native'
+import { FlatList,Text, ImageBackground, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import { width } from '../../config'
 import { Data } from '../../mock'
@@ -26,7 +26,7 @@ const DetailSlider = (props) => {
         showsHorizontalScrollIndicator={false}
         data={Data}
         renderItem={({ item, index }) =>
-          <ImageBackground style={{ width: width, height: width * 0.9 * 0.8, flexDirection: 'column-reverse' }} resizeMode='cover' source={item.source}>
+          <ImageBackground style={{ width: width, height: width * 0.9 * 0.8, flexDirection: 'column-reverse' }} resizeMode='cover' source={{ uri: item.source }}>
           </ImageBackground>
         }
       />

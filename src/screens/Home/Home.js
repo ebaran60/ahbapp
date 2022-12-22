@@ -86,7 +86,7 @@ const Home = ({navigation}) => {
   ]
   const handleProductSelect = (source) => {
     navigation.navigate('Detail', {source})
- };
+  };
   
 
 
@@ -94,7 +94,7 @@ const Home = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container} >
       <ScrollView>
-        <Header userName="isim" />
+        <Header userName="Alexandre S." />
         <Search placeholder="Search" iconName="search" />
         <FlatList
           onScroll={event => scrolling(event.nativeEvent.contentOffset.x)}

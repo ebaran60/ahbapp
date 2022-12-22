@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { Fonts } from "../../config";
 
 export default StyleSheet.create({
     container: {
@@ -26,7 +27,13 @@ export default StyleSheet.create({
         fontSize: 14,
         tintColor: '#B9B9B9',
     },
-    name: {},
+    name: {
+        fontFamily:Fonts.Bold,
+        fontWeight:'500',
+        fontSize:16,
+        lineHeight:19,
+        color:'#000000',
+    },
     touchable_container: {
         alignItems:'flex-end'
     },

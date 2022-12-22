@@ -15,8 +15,11 @@ import DetailLocation from '../../Components/DetailLocation';
 import DetailBottomScreen from '../../Components/DetailBottomScreen';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-const Detail = ({route}) => {
+const Detail = ({route , navigation}) => {
 
+  const handleProductSelect = () => {
+    navigation.navigate('Discussion')
+  };
 
   const [selectedSlider, setSelectedSlider] = useState(0);
   const scrolling = (scrollLocation) => {
@@ -58,7 +61,7 @@ const Detail = ({route}) => {
           <DetailButton text1="Meeting" text2="3-8" />
           <Proffer title="Tarkan Concert" />
           <Detailprops />
-          <TouchableOpacity  style={{backgroundColor:'#1F1F1F', borderRadius:50,margin:10,padding:5,alignItems:'center'}}>
+          <TouchableOpacity  style={{backgroundColor:'#1F1F1F', borderRadius:50,margin:10,padding:5,alignItems:'center'}} onPress={() => handleProductSelect()} >
             <Text style={{color: '#FFFFFF',fontWeight:'bold'}}>View Discussions</Text>
           </TouchableOpacity>
           <DetailHeader userName="Cristy C." title="Organiser"/>

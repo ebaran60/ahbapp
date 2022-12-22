@@ -1,16 +1,18 @@
-import { View, Text, ScrollView, SafeAreaView, TextInput, TouchableOpacity, Image } from 'react-native'
+import { View, Text, ScrollView, SafeAreaView, TextInput, TouchableOpacity, Image, FlatList } from 'react-native'
 import React from 'react'
-
-import DiscussionLeftMessage from '../../Components/DiscussionLeftMessage';
-
+import { message } from '../../mock';
+import Message from '../../Components/Message';
 import styles from './Discussion.styles';
 
 const Discussion = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView style={{backgroundColor:'#E5E5E5'}}>
-        <DiscussionLeftMessage />
-      </ScrollView>
+      <FlatList
+      style={{backgroundColor:'#E5E5E5'}}
+      data={message}
+      renderItem={({item})=>
+      <Message  item={item} />
+      } />
       <View style={styles.bottom_container}>
         <View style={styles.left_container} >
           <Image source={require('../../assets/images/Smile.png')} style={{width:28,height:28,margin:10}} />

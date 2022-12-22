@@ -21,47 +21,16 @@ const Detail = ({route , navigation}) => {
     navigation.navigate('Discussion')
   };
 
-  const [selectedSlider, setSelectedSlider] = useState(0);
-  const scrolling = (scrollLocation) => {
-    if (scrollLocation == 0) {
-      setSelectedSlider(0)
-    }
-    else {
-      setSelectedSlider(Math.ceil(scrollLocation / width * 0.9))
-    }
-  }
-  const Data = [
-    {
-      id: 1,
-      source: require("../../assets/images/Tarkan2.png"),
-    },
-    {
-      id: 2,
-      source: require("../../assets/images/Tarkan2.png"),
-    },
-    {
-      id: 3,
-      source: require("../../assets/images/Tarkan2.png"),
-    },
-  ];
+
   return (
     <SafeAreaView style={{backgroundColor:'white' , flex:1}}>
       <ScrollView >
           <Header userName="aaaaa"/>
-          <FlatList
-            onScroll={event => scrolling(event.nativeEvent.contentOffset.x)}
-            horizontal
-            pagingEnabled
-            showsHorizontalScrollIndicator={false}
-            data={Data}
-            renderItem={({ item, index }) =>
-            <DetailSlyder item={item} data={Data} index={index} />
-          } 
-          />
+          <DetailSlyder />
           <DetailButton text1="Meeting" text2="3-8" />
           <Proffer title="Tarkan Concert" />
           <Detailprops />
-          <TouchableOpacity  style={{backgroundColor:'#1F1F1F', borderRadius:50,margin:10,padding:5,alignItems:'center'}} onPress={() => handleProductSelect()} >
+          <TouchableOpacity  style={{backgroundColor:'#1F1F1F', borderRadius:50,margin:10,padding:5,alignItems:'center'}} onPress={() => navigation.navigate('Discussion')} >
             <Text style={{color: '#FFFFFF',fontWeight:'bold'}}>View Discussions</Text>
           </TouchableOpacity>
           <DetailHeader userName="Cristy C." title="Organiser"/>

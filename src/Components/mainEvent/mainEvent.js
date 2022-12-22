@@ -6,7 +6,7 @@ import styles from './mainEvent.styles'
 const mainEvent = (props) => {
   return (
     <TouchableOpacity style={styles.container} onPress={props.onSelect}>
-          <Image style={styles.image} source={props.item.source}/>
+          <Image style={styles.image} source={{uri:props.item.source}}/>
     </TouchableOpacity>
   )
 }

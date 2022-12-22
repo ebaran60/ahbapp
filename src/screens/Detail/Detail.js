@@ -5,7 +5,7 @@ import { height, width } from '../../config';
 import styles from './Detail.styles';
 
 import Header from '../../Components/Header';
-import DetailSlyder from '../../Components/DetailSlyder'
+import DetailSlider from '../../Components/DetailSlider'
 import DetailButton from '../../Components/DetailButton';
 import Proffer from '../../Components/Proffer';
 import Detailprops from '../../Components/Detailprops';
@@ -26,7 +26,7 @@ const Detail = ({route , navigation}) => {
     <SafeAreaView style={{backgroundColor:'white' , flex:1}}>
       <ScrollView >
           <Header userName="aaaaa"/>
-          <DetailSlyder />
+          <DetailSlider />
           <DetailButton text1="Meeting" text2="3-8" />
           <Proffer title="Tarkan Concert" />
           <Detailprops />

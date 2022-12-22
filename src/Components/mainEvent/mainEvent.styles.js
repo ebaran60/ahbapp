@@ -11,7 +11,7 @@ export default StyleSheet.create({
     image: {
         width:353,
         height:175,
-        resizeMode: 'contain',
+        resizeMode: 'cover',
         backgroundColor: 'blue',
         borderRadius:13,
     },

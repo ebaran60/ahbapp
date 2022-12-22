@@ -1,11 +1,10 @@
 import { FlatList, ImageBackground, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import { width } from '../../config'
+import { Data } from '../../mock'
+import styles from './DetailSlider.styles'
 
-import styles from './DetailSlyder.styles'
-
-const DetailSlyder = (props) => {
-
+const DetailSlider = (props) => {
   const [selectedSlider, setSelectedSlider] = useState(0);
   const scrolling = (scrollLocation) => {
     if (scrollLocation == 0) {
@@ -15,20 +14,7 @@ const DetailSlyder = (props) => {
       setSelectedSlider(Math.ceil(scrollLocation / width * 0.9))
     }
   }
-  const Data = [
-    {
-      id: 1,
-      source: require("../../assets/images/Tarkan2.png"),
-    },
-    {
-      id: 2,
-      source: require("../../assets/images/Tarkan2.png"),
-    },
-    {
-      id: 3,
-      source: require("../../assets/images/Tarkan2.png"),
-    },
-  ];
+
 
   return (
 
@@ -53,4 +39,4 @@ const DetailSlyder = (props) => {
   )
 }
 
-export default DetailSlyder
+export default DetailSlider

@@ -37,15 +37,25 @@ const Home = ({navigation}) => {
   const Activity = [
     {
       id: 1,
+      participant:"1",
+      title:"Cinema",
       source: require("../../assets/images/cinema.png"),
+      date:"12 October 15:45",
+      location:"E.Ü. Konak AKM Yunus E...",
     },
     {
       id: 2,
-      source: require("../../assets/images/cinema.png"),
+      title:"Camping",
+      source: require("../../assets/images/Camping.png"),
+      date:"12 October 15:45",
+      location:"E.Ü. Konak AKM Yunus E...",
     },
     {
       id: 3,
-      source: require("../../assets/images/cinema.png"),
+      title:"Football",
+      source: require("../../assets/images/Football.png"),
+      date:"12 October 15:45",
+      location:"E.Ü. Konak AKM Yunus E...",
     },
   ];
   const Titless = [

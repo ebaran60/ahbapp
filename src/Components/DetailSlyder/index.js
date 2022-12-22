@@ -1,1 +1,1 @@
-export {default} from './mainEvent';
+export {default} from './DetailSlyder';

@@ -9,7 +9,7 @@ export default StyleSheet.create({
     },
     image:{
         width: 150,
-        height: 235,
+        height: 240,
         alignItems:'flex-start',
         justifyContent:'flex-end',
         padding:5
@@ -24,5 +24,12 @@ export default StyleSheet.create({
         shadowRadius: 16.00,
         
         elevation: 24,
-    }
+    },
+    text_image:{
+        marginRight:5,
+        marginBottom:5,
+        width:15,
+        height:15,
+        resizeMode: 'contain',
+    },
 });

@@ -64,7 +64,7 @@ export const Activity = [
     },
 ];
 
-export const message = [
+export const messages = [
     {
         id: 1,
         from: 1,

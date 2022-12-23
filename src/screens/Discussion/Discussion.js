@@ -31,7 +31,7 @@ const Discussion = () => {
   const sendMessage = (message) => {
     socket.emit("sendmessage", { userId, message, })
   }
-
+git 
   return (
     <SafeAreaView style={styles.container}>
       <FlatList

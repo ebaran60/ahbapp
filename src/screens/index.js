@@ -8,6 +8,7 @@ import Profile from './Profile';
 import Search from './Search';
 import Detail from './Detail';
 import Discussion from './Discussion';
+import Notification from './Notification';
 
 
 
@@ -22,6 +23,7 @@ export function HomeStackScreen({ navigation }) {
       <HomeStack.Screen name="Home" component={Home} />
       <HomeStack.Screen name="Detail" component={Detail} />
       <HomeStack.Screen name="Discussion" component={Discussion} />
+      <HomeStack.Screen name="Notification" component={Notification} />
     </HomeStack.Navigator>
   );
 }

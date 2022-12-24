@@ -10,10 +10,15 @@ export default StyleSheet.create({
         borderRadius:5,
         alignItems:'center'
     },
-    image: {
+    profileImage: {
         width: 40,
         height: 40,
         marginRight: 5,
+
+    },
+    notificationImage: {
+        width: 40,
+        height: 40,
 
     },
     leftContainer: {

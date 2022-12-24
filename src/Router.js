@@ -53,8 +53,8 @@ const TabScreens = ({ navigation }) => {
         tabBarIcon: ({ focused }) => {
           return (
             focused
-              ? <Image style={{ width: 45, resizeMode: 'contain', height: 45 }} source={require('./assets/images/historyFocus.png')} />
-              : <Image style={{ width: 30, resizeMode: 'contain', height: 30 }} source={require('./assets/images/history.png')} />
+              ? <Image style={{ width: 45, resizeMode: 'contain', height: 45 }} source={require('./assets/images/focusBookmark.png')} />
+              : <Image style={{ width: 35, resizeMode: 'contain', height: 35 }} source={require('./assets/images/Bookmark.png')} />
           )
         }
       }} />

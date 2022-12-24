@@ -31,17 +31,20 @@ const Home = ({ navigation }) => {
       setDataState(Data)
     } 1
   }
-  const handleProductSelect = (source) => {
+  const detailProductSelect = (source) => {
     navigation.navigate('Detail', { source })
   };
 
+  const notificationSelect = () => {
+    navigation.navigate('Notification')
+  };
 
 
 
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-        <Header userName="Alexandre S." />
+        <Header userName="Alexandre S." onPress={() => notificationSelect()} />
         <Search value={searchKeyword} onChangeText={text => aramaYap(text)} />
         {dataState.length == 0
           ? 
@@ -54,7 +57,7 @@ const Home = ({ navigation }) => {
               showsHorizontalScrollIndicator={false}
               data={dataState}
               renderItem={({ item, index }) =>
-                <MainEvent item={item} onSelect={() => handleProductSelect(item.source)} />
+                <MainEvent item={item} onSelect={() => detailProductSelect(item.source)} />
               } />
             <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'center', marginTop: 5 }}>
               {dataState.map((item, index) =>

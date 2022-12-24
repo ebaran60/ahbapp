@@ -15,7 +15,7 @@ export default StyleSheet.create({
         margin:40
     },
     text:{
-        fontFamily:Fonts.Bold,
+        fontFamily:Fonts.Medium,
         fonts:20,
         lineHeight:30,
         fontWeight:'400',

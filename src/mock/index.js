@@ -74,7 +74,7 @@ export const message = [
         isSelf:false        
     },
     {
-        id: 1,
+        id: 2,
         from: 2,
         message:"Etkinlik kaçta?",
         date:"11:00 am",
@@ -82,7 +82,7 @@ export const message = [
         isSelf:false        
     },
     {
-        id: 1,
+        id: 3,
         from: 3,
         message:"Test mesajı?",
         date:"11:00 am",
@@ -90,11 +90,75 @@ export const message = [
         isSelf:true        
     },
     {
-        id: 1,
+        id: 4,
         from: 4,
         message:"Merhaba emre naber?",
         date:"12:00 am",
         userImage:"https://images.pexels.com/photos/6182343/pexels-photo-6182343.jpeg?auto=compress&cs=tinysrgb&w=250",
         isSelf:false        
     }
+]
+
+export const Notifications = [
+    {
+        id: 1,
+        name:"Jennifer J.",
+        title:"Joined Same Events With You!",
+        userImage:"https://images.pexels.com/photos/6182343/pexels-photo-6182343.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 2,
+        name:"Houssein A.",
+        title:"Joined Same Events With You!",
+        userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 3,
+        name:"Houssein A.",
+        title:"Joined Same Events With You!",
+        userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 4,
+        name:"Houssein A.",
+        title:"Joined Same Events With You!",
+        userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 5,
+        name:"Houssein A.",
+        title:"Joined Same Events With You!",
+        userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 6,
+        name:"Houssein A.",
+        title:"Joined Same Events With You!",
+        userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 7,
+        name:"Houssein A.",
+        title:"Joined Same Events With You!",
+        userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 8,
+        name:"Houssein A.",
+        title:"Joined Same Events With You!",
+        userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 9,
+        name:"Houssein A.",
+        title:"Joined Same Events With You!",
+        userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 10,
+        name:"Houssein A.",
+        title:"Joined Same Events With You!",
+        userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+
 ]

@@ -25,7 +25,7 @@ const Detail = ({route , navigation}) => {
   return (
     <SafeAreaView style={{backgroundColor:'white' , flex:1}}>
       <ScrollView >
-          <Header userName="aaaaa"/>
+          <Header userName="Alexande S."/>
           <DetailSlider />
           <DetailButton text1="Meeting" text2="3-8" />
           <Proffer title="Tarkan Concert" />

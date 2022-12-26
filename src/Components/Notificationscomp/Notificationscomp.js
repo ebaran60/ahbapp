@@ -20,7 +20,7 @@ const Notificationscomp = () => {
               <Image style={styles.image} source={{uri : item.userImage}} />
               <View>
                 <Text style={styles.nameText}>{item.name}</Text>
-                <Text style={styles.titleText}>{item.title}</Text>
+                <Text style={styles.titleText}>{item.notification}</Text>
               </View>
             </View>
             <View>

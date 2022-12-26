@@ -103,62 +103,84 @@ export const Notifications = [
     {
         id: 1,
         name:"Jennifer J.",
-        title:"Joined Same Events With You!",
+        notification:"Joined Same Events With You!",
         userImage:"https://images.pexels.com/photos/6182343/pexels-photo-6182343.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
     {
         id: 2,
         name:"Houssein A.",
-        title:"Joined Same Events With You!",
+        notification:"Joined Same Events With You!",
         userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
     {
         id: 3,
         name:"Houssein A.",
-        title:"Joined Same Events With You!",
+        notification:"Joined Same Events With You!",
         userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
     {
         id: 4,
         name:"Houssein A.",
-        title:"Joined Same Events With You!",
+        notification:"Joined Same Events With You!",
         userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
     {
         id: 5,
         name:"Houssein A.",
-        title:"Joined Same Events With You!",
+        notification:"Joined Same Events With You!",
         userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
     {
         id: 6,
         name:"Houssein A.",
-        title:"Joined Same Events With You!",
+        notification:"Joined Same Events With You!",
         userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
     {
         id: 7,
         name:"Houssein A.",
-        title:"Joined Same Events With You!",
+        notification:"Joined Same Events With You!",
         userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
     {
         id: 8,
         name:"Houssein A.",
-        title:"Joined Same Events With You!",
+        notification:"Joined Same Events With You!",
         userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
     {
         id: 9,
         name:"Houssein A.",
-        title:"Joined Same Events With You!",
+        notification:"Joined Same Events With You!",
         userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
     {
         id: 10,
         name:"Houssein A.",
-        title:"Joined Same Events With You!",
+        notification:"Joined Same Events With You!",
         userImage:"https://images.pexels.com/photos/13055226/pexels-photo-13055226.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
 
+]
+export const Bookmarks = [
+    {
+        id: 1,
+        title:"Tarkan Concert",
+        eventImage:"https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 2,
+        title:"Camping",
+        eventImage:"https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 3,
+        title:"Live Song",
+        eventImage:"https://images.pexels.com/photos/613813/pexels-photo-613813.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
+    {
+        id: 4,
+        title:"Developers Meeting",
+        eventImage:"https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=250",
+    },
 ]

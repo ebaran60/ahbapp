@@ -3,7 +3,7 @@ import { Image, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeStackScreen, ActivityStackScreen, HistoryStackScreen, ProfileStackScreen, MapStackScreen } from './screens';
+import { HomeStackScreen, ActivityStackScreen, BookmarkStackScreen, ProfileStackScreen, MapStackScreen } from './screens';
 import { colors } from './config'
 const Tab = createBottomTabNavigator();
 
@@ -48,7 +48,7 @@ const TabScreens = ({ navigation }) => {
           )
         }
       }} />
-      <Tab.Screen name="Geçmiş" component={HistoryStackScreen} options={{
+      <Tab.Screen name="Geçmiş" component={BookmarkStackScreen} options={{
         tabBarShowLabel: false,
         tabBarIcon: ({ focused }) => {
           return (

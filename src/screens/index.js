@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './Home';
 import Activity from './Activity';
-import History from './History';
+import Bookmark from './Bookmark';
 import Profile from './Profile';
 import Search from './Search';
 import Detail from './Detail';
@@ -42,15 +42,15 @@ export function ActivityStackScreen({ navigation }) {
 }
 
 
-export const HistoryStack = createNativeStackNavigator();
+export const BookmarkStack = createNativeStackNavigator();
 
-export function HistoryStackScreen({ navigation }) {
+export function BookmarkStackScreen({ navigation }) {
   return (
-    <HistoryStack.Navigator screenOptions={{
+    <BookmarkStack.Navigator screenOptions={{
       headerShown: false
     }}>
-      <HistoryStack.Screen name="History" component={History} />
-    </HistoryStack.Navigator>
+      <BookmarkStack.Screen name="Bookmark" component={Bookmark} />
+    </BookmarkStack.Navigator>
   );
 }
 

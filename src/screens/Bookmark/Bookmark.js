@@ -1,6 +1,6 @@
-import { View, Text, SafeAreaView } from 'react-native'
+import { View, SafeAreaView } from 'react-native'
 import React from 'react'
-import { Notifications } from '../../mock';
+import { Bookmarks } from '../../mock';
 
 import styles from './Bookmark.styles';
 
@@ -8,18 +8,20 @@ import NoResult from '../../Components/NoResult';
 import Bookmarkcomp from '../../Components/Bookmarkcomp';
 
 const Bookmark = () => {
-  return (
-    <SafeAreaView style={styles.container}>
-        {Notifications.length == 0 
-        ?
-          <View style={styles.noresultView}>
-            <NoResult />
-          </View>
-        :
-            <Bookmarkcomp />
-        }
-    </SafeAreaView>
-  )
+  if(Bookmarks.length == 0) {
+    return (
+      <View style={styles.noResult}>
+       <NoResult />
+      </View>
+    )
+  }
+  else{
+    return (
+      <SafeAreaView style={styles.container}>
+        <Bookmarkcomp />
+      </SafeAreaView>
+    )
+  }
 }
 
 export default Bookmark

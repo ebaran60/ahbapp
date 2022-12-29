@@ -1,4 +1,4 @@
-import { View, Text, Image, SafeAreaView } from 'react-native'
+import { View, SafeAreaView } from 'react-native'
 import React from 'react'
 
 import styles from './Notification.styles';
@@ -9,18 +9,20 @@ import Notificationscomp from '../../Components/Notificationscomp';
 import { Notifications } from '../../mock';
 
 const Notification = () => {
-  return (
-    <SafeAreaView style={styles.container}>
-        {Notifications.length == 0 
-        ?
-          <View style={styles.noresultView}>
-            <NoResult />
-          </View>
-        :
-            <Notificationscomp />
-        }
-    </SafeAreaView>
-  )
+  if(Notifications.length == 0) {
+    return (
+      <View style={styles.noResult}>
+       <NoResult />
+      </View>
+    )
+  }
+  else{
+    return (
+      <SafeAreaView style={styles.container}>
+        <Notificationscomp />
+      </SafeAreaView>
+    )
+  }
 }
 
 export default Notification

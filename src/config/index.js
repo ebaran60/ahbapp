@@ -21,6 +21,10 @@ export const Fonts = {
   Semibold: 'Urbanist-SemiBold',
   Bold: 'Urbanist-Bold',
   Medium: 'Urbanist-Medium',
+  poppinsBold: 'Poppins-Bold',
+  poppinsMedium: 'Poppins-Medium',
+  poppinsSemibold: 'Poppins-Semibold',
+  poppinsRegular: 'Poppins-Regular',
 }
 
 export let headerConfig, headerConfigWithFile, imageToken;

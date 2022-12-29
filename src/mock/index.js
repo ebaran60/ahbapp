@@ -165,22 +165,8 @@ export const Notifications = [
 export const Bookmarks = [
     {
         id: 1,
-        title:"Tarkan Concert",
-        eventImage:"https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?auto=compress&cs=tinysrgb&w=250",
-    },
-    {
-        id: 2,
-        title:"Camping",
-        eventImage:"https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=250",
-    },
-    {
-        id: 3,
-        title:"Live Song",
-        eventImage:"https://images.pexels.com/photos/613813/pexels-photo-613813.jpeg?auto=compress&cs=tinysrgb&w=250",
-    },
-    {
-        id: 4,
-        title:"Developers Meeting",
-        eventImage:"https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=250",
+        title:"Jennifer J.",
+        notification:"Joined Same Events With You!",
+        eventImage:"https://images.pexels.com/photos/6182343/pexels-photo-6182343.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
 ]

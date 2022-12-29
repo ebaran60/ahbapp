@@ -3,8 +3,6 @@ import { colors, width, height, Fonts } from '../../config';
 
 export default StyleSheet.create({
     container:{
-        width:width,
-        height:height,
         backgroundColor:colors.white,
         alignItems:'center',
         padding:10,

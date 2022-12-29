@@ -9,6 +9,7 @@ import Search from './Search';
 import Detail from './Detail';
 import Discussion from './Discussion';
 import Notification from './Notification';
+import Editprofile from './Profile/screens/EditProfile';
 
 
 
@@ -63,6 +64,7 @@ export function ProfileStackScreen({ navigation }) {
       headerShown: false
     }}>
       <ProfileStack.Screen name="Profile" component={Profile} />
+      <ProfileStack.Screen name="Editprofile" component={Editprofile} />
     </ProfileStack.Navigator>
   );
 }

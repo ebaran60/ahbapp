@@ -12,22 +12,22 @@ const Profile = ({navigation}) => {
         <Text style={styles.text}>Edit Profile</Text>
       </TouchableOpacity>
       <View style={styles.line} />
-      <TouchableOpacity style={styles.touchableContainer}>
+      <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate('Editnotification')}>
         <Image style={styles.image} source={require('../../assets/images/settingnotification.png')}/>
         <Text style={styles.text}>Notification</Text>
       </TouchableOpacity>
       <View style={styles.line} />
-      <TouchableOpacity style={styles.touchableContainer}>
+      <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate('Editsecurity')}>
         <Image style={styles.image} source={require('../../assets/images/security.png')}/>
         <Text style={styles.text}>Security</Text>
       </TouchableOpacity>
       <View style={styles.line} />
-      <TouchableOpacity style={styles.touchableContainer}>
+      <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate('Editapperance')}>
         <Image style={styles.image} source={require('../../assets/images/apperance.png')}/>
         <Text style={styles.text}>Apperance</Text>
       </TouchableOpacity>
       <View style={styles.line} />
-      <TouchableOpacity style={styles.touchableContainer}>
+      <TouchableOpacity style={styles.touchableContainer} onPress={() => navigation.navigate('Edithelp')}>
         <Image style={styles.image} source={require('../../assets/images/help.png')}/>
         <Text style={styles.text}>Help</Text>
       </TouchableOpacity>

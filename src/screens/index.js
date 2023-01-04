@@ -10,6 +10,11 @@ import Detail from './Detail';
 import Discussion from './Discussion';
 import Notification from './Notification';
 import Editprofile from './Profile/screens/EditProfile';
+import Editnotification from './Profile/screens/EditNotification';
+import EditSecurity from './Profile/screens/EditSecurity';
+import EditApperance from './Profile/screens/EditApperance';
+import EditHelp from './Profile/screens/EditHelp';
+import HelpFAQ from './Profile/screens/EditHelp/screens/FAQ';
 
 
 
@@ -65,6 +70,11 @@ export function ProfileStackScreen({ navigation }) {
     }}>
       <ProfileStack.Screen name="Profile" component={Profile} />
       <ProfileStack.Screen name="Editprofile" component={Editprofile} />
+      <ProfileStack.Screen name="Editnotification" component={Editnotification} />
+      <ProfileStack.Screen name="Editsecurity" component={EditSecurity} />
+      <ProfileStack.Screen name="Editapperance" component={EditApperance} />
+      <ProfileStack.Screen name="Edithelp" component={EditHelp} />
+      <ProfileStack.Screen name="helpFAQ" component={HelpFAQ} />
     </ProfileStack.Navigator>
   );
 }

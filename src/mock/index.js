@@ -170,3 +170,45 @@ export const Bookmarks = [
         eventImage:"https://images.pexels.com/photos/6182343/pexels-photo-6182343.jpeg?auto=compress&cs=tinysrgb&w=250",
     },
 ]
+export const notificationSetting = [
+    {
+        id: 1,
+        text: "Sound",
+    },
+    {
+        id: 2,
+        text: "Vibrate",
+    },
+    {
+        id: 3,
+        text: "New Events",
+    },
+    {
+        id: 4,
+        text: "New Messages",
+    },
+]
+export const securitySetting = [
+    {
+        id: 1,
+        text: "Sound",
+    },
+    {
+        id: 2,
+        text: "Vibrate",
+    },
+    {
+        id: 3,
+        text: "New Events",
+    },
+]
+export const appearanceSetting = [
+    {
+        id: 1,
+        text: "Dark Mode",
+    },
+    {
+        id: 2,
+        text: "New Events",
+    },
+]
